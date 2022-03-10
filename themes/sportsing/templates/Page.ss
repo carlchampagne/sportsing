@@ -6,7 +6,7 @@
 <% with $Team('All Blacks') %>
     <p>
     <% if $Name != 'Team' %>
-        Team: $Name ($Scope)<br />
+        Team: $Name ($Scope.LowerCase $Sport.Title.LowerCase team)<br />
         Colour: $TeamColour.Title<br />
         <% if $MascotName %>Mascot: $MascotName<br /><% end_if %>
         Season: $Sport.Season<br />
@@ -32,7 +32,7 @@
         Teams:
         <ul>
         <% loop $Teams %>
-            <li>$Name ($Scope) - $Sport.Season</li>
+            <li>$Name ($Scope.LowerCase $Sport.Title.LowerCase team) - $Sport.Season</li>
         <% end_loop %>
         </ul>
     <% else %>

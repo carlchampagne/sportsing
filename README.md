@@ -38,3 +38,18 @@ Build task:
 
 <your_url>/dev/tasks/ImportTestDataTask
 ```
+
+## Usage
+
+To keep things simple. I've made a very basic template to show the results of the functions on the default page type.
+
+After running the build task, just load the home page.
+
+## Further Notes and Comments
+
+The data structure includes the ability to have an image for Cricket teams, although it is unused in the data import and output. 
+
+I have included basic admin panels mainly to see the content loaded into the database.
+
+For cleanliness of code and future extensibility, I have given all teams the ability to have both a mascot and a logo regardless of the type of sport.
+Additional logic could be added if we wish to hide the mascot name from Cricket and logo from Rugby.
