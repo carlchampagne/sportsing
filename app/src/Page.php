@@ -15,7 +15,7 @@ namespace {
 
         private static $has_one = [];
 
-        function TeamDetails($name) {
+        function Team($name) {
             if (!is_string($name))
                 return false;
 
@@ -24,7 +24,7 @@ namespace {
             return $team;
         }
 
-        function SportsmanDetails($firstName, $lastName) {
+        function Sportsman($firstName, $lastName) {
             if (!is_string($firstName) || !is_string($lastName))
                 return false;
 

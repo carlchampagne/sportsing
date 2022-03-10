@@ -3,9 +3,9 @@
 
 <strong>Find the All Blacks team from the database, and then present whether it’s regional or national, it’s colour, mascot, the season they play, and then a list of the players.</strong>
 
-<% with $TeamDetails('All Blacks') %>
+<% with $Team('All Blacks') %>
     <p>
-    <% if $Name != 'TeamDetails' %>
+    <% if $Name != 'Team' %>
         Team: $Name ($Scope)<br />
         Colour: $TeamColour.Title<br />
         <% if $MascotName %>Mascot: $MascotName<br /><% end_if %>
@@ -25,7 +25,7 @@
 
 <strong>Find Jeff Wilson and show the teams he plays in, along with the season that the teams play and if the team is national or regional.</strong>
 
-<% with $SportsmanDetails('Jeff', 'Wilson') %>
+<% with $Sportsman('Jeff', 'Wilson') %>
     <p>
     <% if $FirstName %>
         Name: $FirstName $LastName<br />
